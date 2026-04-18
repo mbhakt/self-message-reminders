@@ -1,0 +1,22 @@
+{
+  "overview": "A WhatsApp-inspired self-messaging app where you can send notes and reminders to yourself, save reusable message templates, and browse your full message history in a chat-style inbox — all stored persistently on the Internet Computer.",
+  "features": [
+    "Send messages to yourself with a chat-style compose area",
+    "Custom message templates library — create, edit, and delete reusable presets",
+    "Quick-fill compose from saved templates",
+    "Chronological chat-like message inbox with timestamps",
+    "Delete individual messages from history",
+    "WhatsApp-inspired green/teal UI with chat bubbles and responsive layout"
+  ],
+  "category": "productivity",
+  "tags": [
+    "messaging",
+    "reminders",
+    "notes",
+    "productivity",
+    "whatsapp",
+    "templates",
+    "self-messaging"
+  ],
+  "last_updated": "2026-04-18T05:40:44.210Z"
+}

@@ -1,0 +1,43 @@
+// Version: 1.0.0
+type MessageId__159367956 = MessageId__291319400;
+type MessageId__291319400 = Nat;
+type Message__714344397 =
+  {
+    content : Text;
+    id : MessageId__159367956;
+    timestamp : Timestamp__551826535
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type TemplateId__141868339 = Nat;
+type TemplateId__145722727 = TemplateId__141868339;
+type Template__810944557 =
+  {id : TemplateId__145722727; name : Text; text : Text};
+type Timestamp__301639476 = Int;
+type Timestamp__551826535 = Timestamp__301639476;
+actor {
+  stable messages :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Message__714344397]];
+      var elementIndex : Nat__490723111
+    };
+  stable nextMessageId :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Nat]];
+      var elementIndex : Nat__490723111
+    };
+  stable nextTemplateId :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Nat]];
+      var elementIndex : Nat__490723111
+    };
+  stable templates :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Template__810944557]];
+      var elementIndex : Nat__490723111
+    }
+};

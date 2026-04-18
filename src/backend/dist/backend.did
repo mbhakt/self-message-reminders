@@ -1,0 +1,24 @@
+type Timestamp = int;
+type TemplateId = nat;
+type Template = 
+ record {
+   id: TemplateId;
+   name: text;
+   "text": text;
+ };
+type MessageId = nat;
+type Message = 
+ record {
+   content: text;
+   id: MessageId;
+   timestamp: Timestamp;
+ };
+service : {
+  createTemplate: (name: text, "text": text) -> (Template);
+  deleteMessage: (id: MessageId) -> (bool);
+  deleteTemplate: (id: TemplateId) -> (bool);
+  listMessages: () -> (vec Message) query;
+  listTemplates: () -> (vec Template) query;
+  sendMessage: (content: text) -> (Message);
+  updateTemplate: (id: TemplateId, name: text, "text": text) -> (bool);
+}
